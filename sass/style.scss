@@ -1,0 +1,22 @@
+$textColor: white;
+$backgorundColor: grey;
+
+h1 {
+    color: $textColor;
+    background-color: $backgorundColor;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 80px;
+    border-bottom: solid 3px $textColor;
+}
+.quote, .author {
+    color: $textColor;
+    background-color: $backgorundColor;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 40px;
+    border-bottom: solid 3px $textColor;
+}
+.tweetContainer {
+    text-align: center;
+}
