@@ -1,1 +1,23 @@
-h1 { color: blue; }
+h1 {
+  color: white;
+  background-color: grey;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 80px;
+  border-bottom: solid 3px white;
+}
+
+.quote, .author {
+  color: white;
+  background-color: grey;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 40px;
+  border-bottom: solid 3px white;
+}
+
+.tweetContainer {
+  text-align: center;
+}
+
+/*# sourceMappingURL=style.css.map */
