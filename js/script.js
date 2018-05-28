@@ -3,7 +3,7 @@ var quoteUrl = "https://quotesondesign.com/wp-json/posts?filter[orderby]=rand&fi
 var prefix = "https://cors-anywhere.herokuapp.com/";
 
 function getQuote() {
-    $.getJSON(quoteUrl, createTweet());
+    $.getJSON(prefix + quoteUrl, createTweet);
     $.ajaxSetup({ cache: false });
 }
 
@@ -16,10 +16,11 @@ function createTweet(input) {
         quoteAuthor = "Unknown author";
     }
     
-    var prefix = "https://cors-anywhere.herokuapp.com/";
-    
+    var tweetText = "Quote of the day - " + quoteText + " Author: " + quoteAuthor;
+
     if (tweetText.length > 140) {
         getQuote();
+
     } else {
         var tweet = tweetLink + encodeURIComponent(tweetText);
         $('.quote').text(quoteText);
